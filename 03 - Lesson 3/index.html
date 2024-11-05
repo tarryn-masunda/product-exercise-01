@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - Forms and Inputs</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- internal css -->
+
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with forms and inputs</h1>
+    <!-- this is a form -->
+     <!-- name,email,cell,lecturer,course,rate your lecturer,rate the content,extra -->
+
+<!-- title  -->
+<h2>Feedback Form</h2>
+
+<!-- Start of our form -->
+ <form action=""><!-- Full Name -->
+    <label for="" name="Name">Enter your full name:</label>
+    <input type="text" placeholder="Tarryn"> <!-- User enters their name -->
+
+<br>
+    <!-- Email Address -->
+     <label for="" name="Email">Enter your email address:</label>
+     <input type="email" name="Email"><!-- User enters their email -->
+
+     <br>
+<!-- Cellphone Number -->
+
+<label for="" name="cell">Enter your cellphone number</label>
+<input type="number" name="Cell"><!-- User enters their cell phone number -->
+
+<br>
+<!-- Lecturer Name -->
+ <label for="" name="Lecturer-Name">Enter Lecturer's Name</label>
+ <select name="Lecturer-Name" >
+    <option value="Khanyiso_Haman">Khanyiso Haman</option>
+    <option value="Matthew_Brown">Matthew Brown</option>
+    <option value="Ruth_Nzola">Ruth N'zola</option>
+ </select>
+ <br>
+<!-- Course -->
+ <label for="" Name="">Which course did you complete:</label>
+ <select name="Course_List">
+    <option value="Foundation_Module">Foundation Module</option>
+    <option value="Frontend_Web_Dev">Frontend Web Dev</option>
+ </select>
+
+ <br>
+ <!-- Rate your Lecturer -->
+
+  <label for="" name="Rate_Lecturer">Rate your Lecturer from 1 to 5:</label>
+  <input type="radio" name="1" value="1"> 
+        <label for="">1</label>
+  <input type="radio" name="2" value="2">
+        <label for="">2</label>
+  <input type="radio" name="3" value="3">
+        <label for="">3</label>
+  <input type="radio" name="4" value="4">
+        <label for="">4</label>
+  <input type="radio" name="5" value="5">
+        <label for="">5</label>
+
+<br>
+ <!-- Rate the content-->
+
+ <label for="" name="Rate_content">Rate the content from 1 to 5:</label>
+<input type="radio" name="1" value="1"> 
+    <label for="">1</label>
+<input type="radio" name="2" value="2">
+    <label for="">2</label>
+<input type="radio" name="3" value="3">
+    <label for="">3</label>
+<input type="radio" name="4" value="4">
+    <label for="">4</label>
+<input type="radio" name="5" value="5">
+    <label for="">5</label>
+<br>
+<!-- Extra Comment -->
+ <label for="" name="Extra_Comments">Is there anything you would like to say?</label>
+ <textarea name="Comments"></textarea>
+
+</form>
+</body>
+</html>

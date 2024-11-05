@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Form</title>
+
+    <style>
+    h1,h2{
+    text-align: center;
+    }
+          body{
+          background-image: url(https://i.pinimg.com/736x/fe/ab/00/feab006cc06a270f8435f6f839724574.jpg) ;
+          filter: blur()
+            }
+
+             form{
+            border: 2px solid black;
+            padding: 50px;
+            border-radius: 5px; 
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #4CAF50;
+            background-color: whitesmoke;
+            
+          
+            
+        }
+        input, select{
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 450px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 9px;
+            border-radius: 4px;
+            
+        }
+        input[type="radio" i]{
+            display: inline;
+            border: 2px solid #4CAF50;
+
+        }
+        label[name="DOB"], 
+        
+
+        label[name="Gender"]{
+            display: block;
+
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+     
+        button:hover {
+            background-color: #00ff08; /* lightens on hover */
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 2px solid #4CAF50;
+            box-sizing: border-box;
+        }
+
+    </style>    
+    </head>
+<body >
+    <!-- Form Title  -->
+    <h1>Data Form</h1>
+
+    <!-- Start of data form -->
+    <form action="https://formspree.io/f/xpwzpzrd" method="post">
+
+        <!-- Full Name -->
+     <label for="" name="First Name">Enter your first name:</label>
+        <input type="text" placeholder="First Name" required> <!-- User enters their first name -->
+        
+    <!-- Start of our form -->
+    <!-- last Name -->
+    <label for="" name="Last Name">Enter your last name:</label>
+    <input type="text" placeholder="Last Name" required> 
+    <!-- User enters their Last Name -->
+
+
+      <!-- users gender -->
+      <label for="" name="Gender"> Gender:</label>
+     <select name="Gender" >
+        <option value="" disabled selected>Select your gender</option>
+         <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Non_Binary">Non-Binary </option>
+            <option value="I_prefer_not_to_say">I prefer not to say</option>
+     </select>
+
+ <!-- Users date of birth -->
+  <label for="" name="DOB">Date of birth :</label>
+  <input type="date" name="DOB" required>
+
+  <!-- Cellphone Number -->
+
+<label for="" name="cell">Enter your cellphone number:</label>
+<input type="number" name="Cell" placeholder="### ### #### "><!-- User enters their cell phone number -->
+
+     <!-- Email Address -->
+     <label for="" name="Email">Enter your email address:</label>
+     <input type="email" name="Email" placeholder="@gmail.com" required>
+     <!-- User enters their email -->
+
+ <button type="submit">Submit</button>
+
+</form>
+
+<h2>Search</h2>
+<!-- <form action="http://httpbin.org/get" method="get">
+
+    <input type="text">
+    <button type="submit">Search</button> -->
+
+    <form action="http://httpbin.org/get">
+        <label for="search"></label>
+        <input type="text" name="name" placeholder="Search for a name">
+        <button type="submit">Search</button>
+      </form>
+</form>
+</body>
+</html>

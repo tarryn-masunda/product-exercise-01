@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Set a clean and readable font for the body */
+    color: #333; /* Dark grey text color for better readability */
+    line-height: 1.6; /* Increase line height for improved text readability */
+    background-color: #f4f4f9; /* Light background color for a soft appearance */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Dark background for the navigation bar */
+    font-family: monospace; /* Monospace font for navbar links */
+    padding: 15px; /* Padding around the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center navbar items */
+}
+
+.navbar a {
+    color: whitesmoke; /* Light color for link text */
+    text-align: center; /* Center text in navbar links */
+    padding: 14px 20px; /* Padding around navbar links */
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase; /* Uppercase text for links */
+    margin: 0 10px; /* Margin between links */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Light background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+/* Title */
+h1 {
+    font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif; /* Set font family for title */
+    text-transform: uppercase; /* Uppercase text for title */
+    text-align: center; /* Center title */
+    font-size: 2rem; /* Font size for title */
+    color: #2c3e50; /* Dark color for title */
+    margin: 2rem 0; /* Margin above and below title */
+}
+
+/* Blog Cards Layout */
+.blog-cards {
+    display: grid; /* Use grid layout for blog cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum card width */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Maximum width for the grid */
+    margin: auto; /* Center the grid */
+}
+
+/* Individual Blog Card */
+.card {
+    background-color: #fff; /* White background for cards */
+    border: 2px solid #cac5c5; /* Light grey border around cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack elements vertically in the card */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover for emphasis */
+}
+
+.card img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio of images */
+    object-fit: cover; /* Cover the card area with images */
+}
+
+.card h3 {
+    font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif; /* Set font family for card titles */
+    font-size: 20px; /* Font size for card titles */
+    color: #2c3e50; /* Dark color for card titles */
+    margin: 15px; /* Margin around card titles */
+    text-align: center; /* Center card titles */
+}
+
+.card p {
+    padding: 0 15px 15px; /* Padding around paragraph text */
+    color: #666; /* Medium grey color for paragraph text */
+    text-align: justify; /* Justify text for better alignment */
+    font-size: 0.9rem; /* Font size for paragraph text */
+}
+
+/* Read More Button */
+.card input[type="button"] {
+    width: 80%; /* Button width */
+    padding: 0.75rem; /* Padding inside the button */
+    border: none; /* Remove default border */
+    background-color: #FF5555; /* Red background for button */
+    color: #fff; /* White text color for button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    align-self: center; /* Center button in card */
+    margin-bottom: 15px; /* Margin below button */
+}
+
+.card input[type="button"]:hover {
+    background-color: #e04a4a; /* Darker red on hover */
+}
+
+/* Main Content Padding */
+main {
+    padding: 50px; /* Padding around main content */
+}
+
+/* Experience Section */
+h2 {
+    text-align: center; /* Center experience section heading */
+    margin: 40px 0; /* Margin above and below heading */
+    color: #2c3e50; /* Dark color for heading */
+}
+
+h5 {
+    font-size: 1.2rem; /* Font size for subheadings */
+    color: #333; /* Dark grey color for subheadings */
+    margin-top: 20px; /* Margin above subheadings */
+}
+
+p {
+    margin-bottom: 20px; /* Margin below paragraphs */
+    padding: 0 20px; /* Horizontal padding for paragraphs */
+}
